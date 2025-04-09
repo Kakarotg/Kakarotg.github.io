@@ -1,0 +1,16 @@
+user:
+  name: AndroidNotResponding
+  first_name: 等天黑
+  last_name: BLOG
+  email: admin@imalun.com
+  domain: https://www.imalun.com
+  avatar: /img/avatar.jpg
+  describe: 网站简介。
+  rule_text: 暂不接受个人博客以外的友链申请，确保您的网站内容积极向上，文章至少30篇，原创70%以上，部署HTTPS。
+
+banner:
+  index:
+    type: img
+    bgurl: /img/MainBackground.jpg
+    banner_title: 2鹿，<br>溪午不闻钟。
+    banner_text: Hi my new friend!
