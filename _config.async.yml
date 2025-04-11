@@ -11,6 +11,6 @@ user:
 banner:
   index:
     type: img
-    bgurl: /img/MainBackground.jpg
-    banner_title: 2鹿，<br>溪午不闻钟。
+    bgurl: /custom_image/MainBackground.jpg
+    banner_title: 树深时见鹿，<br>溪午不闻钟。
     banner_text: Hi my new friend!
