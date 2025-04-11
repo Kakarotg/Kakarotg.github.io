@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="1.启动docker容器报错root@starnet:~# docker start 6ff922995a27Error response from daemon: network 31ca337d526ca9c3aa7c9bb986f5eb770f6845b0965a987b1e3d3c6417390241 not foundError: failed to start containers:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="杂项问题">
+<meta property="og:url" content="http://example.com/2025/04/10/%E6%9D%82%E9%A1%B9%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.启动docker容器报错root@starnet:~# docker start 6ff922995a27Error response from daemon: network 31ca337d526ca9c3aa7c9bb986f5eb770f6845b0965a987b1e3d3c6417390241 not foundError: failed to start containers:">
+<meta property="og:locale">
+<meta property="article:published_time" content="2025-04-10T02:21:25.000Z">
+<meta property="article:modified_time" content="2025-04-11T08:13:57.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+<title >杂项问题</title>
+
+<!-- Favicon -->
+
+    <link href='/img/favicon.svg?v=2.2.2' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/img/favicon.svg?v=2.2.2' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"John Doe","root":"/","typed_text":null,"theme_version":"2.2.2","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","apple_touch_icon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-04-11 16:13:57"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.2" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+        <img alt="logo" src="/img/favicon.svg">
+    
+    
+        <div class="trm-logo-text">
+            BLOG<span>等天黑</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text trm-text-center ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            杂项问题
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2025
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+            <div class="trm-page-content col-lg-12">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            04/10
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            10:21
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            John Doe
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h4 id="1-启动docker容器报错"><a href="#1-启动docker容器报错" class="headerlink" title="1.启动docker容器报错"></a>1.启动docker容器报错</h4><p>root@starnet:~# docker start 6ff922995a27<br>Error response from daemon: network 31ca337d526ca9c3aa7c9bb986f5eb770f6845b0965a987b1e3d3c6417390241 not found<br>Error: failed to start containers: 6ff922995a27<br>解决：<br>docker network ls<br>docker inspect 04d9437857ae（容器id）查看以下字段：<br>“Networks”: { “fl_android_90_aml_default”: {<br>docker network create fl_android_90_aml_default<br>docker network disconnect 99be520148f7（新建network的id） 04d9437857ae<br>docker network connect 99be520148f7 04d9437857ae<br>然后再重新docker start</p>
+<h4 id="2-System-loadLibrary方法找不到库报错"><a href="#2-System-loadLibrary方法找不到库报错" class="headerlink" title="2.System.loadLibrary方法找不到库报错"></a>2.System.loadLibrary方法找不到库报错</h4><p>报错：java.lang.UnsatisfiedLinkError: dlopen failed: library “&#x2F;system&#x2F;app&#x2F;hy_sign_20221201.apk!&#x2F;lib&#x2F;armeabi-v7a&#x2F;libshell-super.2019.so” not found<br>对于这个方法 System.loadLibrary(“shell-super.2019”);<br>在4.4中优先查找&#x2F;system&#x2F;lib，然后再去&#x2F;vendor&#x2F;lib<br>在8.0以上的版本中，不会直接去&#x2F;system&#x2F;lib中查找，每个应用都有独立的 native 库搜索路径<br>这些路径是由链接器在加载时指定的，顺序为：<br>1.&#x2F;data&#x2F;data&#x2F;<package_name>&#x2F;lib&#x2F; （一般来说这个是一个软链接，链接到&#x2F;system&#x2F;lib&#x2F;<package_name>目录）<br>如果apk不是直接预置在system下，那么这个软链接则会链接到&#x2F;data&#x2F;app&#x2F;xxxx&#x2F;lib&#x2F;arm目录，手动安装时提取的so就会被放到这里<br>2.apk预置的位置，比如预置在&#x2F;system&#x2F;app，就会直接去apk内部寻找 ：&#x2F;system&#x2F;app&#x2F;<apk_name>.apk!&#x2F;lib&#x2F; （注：如果apk内的so库未进行4字节边缘对齐，则会无法识别 报错not found）<br>zipalign -c -v 4 demo_sign.apk 检查apk 4字节对齐情况<br>zipalign -v -p 4 demo_sign.apk demo_sign_align.apk 手动对齐<br><a target="_blank" rel="noopener" href="https://juejin.cn/post/7455913880767463478">参考文章 https://juejin.cn/post/7455913880767463478</a></p>
+<h4 id="3-service服务的onStartCommand生命周期回调中使用intent-getStringExtra，报错intent为空，已知启动服务的入口是有传递intent对象的"><a href="#3-service服务的onStartCommand生命周期回调中使用intent-getStringExtra，报错intent为空，已知启动服务的入口是有传递intent对象的" class="headerlink" title="3.service服务的onStartCommand生命周期回调中使用intent.getStringExtra，报错intent为空，已知启动服务的入口是有传递intent对象的"></a>3.service服务的onStartCommand生命周期回调中使用intent.getStringExtra，报错intent为空，已知启动服务的入口是有传递intent对象的</h4><p>原因：有其他地方崩溃导致服务触发重启机制，服务重启时进入触发的onStartCommand回调方法，intent是为null的</p>
+<h4 id="4-未签名apk使用session-commit安装其他apk失败"><a href="#4-未签名apk使用session-commit安装其他apk失败" class="headerlink" title="4.未签名apk使用session.commit安装其他apk失败"></a>4.未签名apk使用session.commit安装其他apk失败</h4><p>根本原因是权限检测未通过，到目前这里系统没有报错日志打印，所以不好发现，检测条件如下：<br>frameworks&#x2F;base&#x2F;services&#x2F;core&#x2F;java&#x2F;com&#x2F;android&#x2F;server&#x2F;pm&#x2F;PackageInstallerSession.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Checks if the permissions still need to be confirmed.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * &lt;p&gt;This is dependant on the identity of the installer, hence this cannot be cached if the</span></span><br><span class="line"><span class="comment"> * installer might still &#123;<span class="doctag">@link</span> #transfer(String) change&#125;.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="doctag">@code</span> true&#125; iff we need to ask to confirm the permissions?</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@GuardedBy(&quot;mLock&quot;)</span></span><br><span class="line"><span class="keyword">private</span> <span class="type">boolean</span> <span class="title function_">needToAskForPermissionsLocked</span><span class="params">()</span> &#123;</span><br><span class="line"> ......</span><br><span class="line">    <span class="comment">// Device owners and affiliated profile owners  are allowed to silently install packages, so</span></span><br><span class="line">    <span class="comment">// the permission check is waived if the installer is the device owner.</span></span><br><span class="line">    <span class="keyword">return</span> forcePermissionPrompt || !(isPermissionGranted || isInstallerRoot</span><br><span class="line">            || isInstallerSystem || isInstallerDeviceOwnerOrAffiliatedProfileOwnerLocked());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>PackageInstallerSession安装apk示例 -&gt; <a href="./%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81/PackageInstallerSession%E5%AE%89%E8%A3%85apk.markdown">示例</a></p>
+<h4 id="5-Android9-0开始系统默认禁止使用-Cleartext-HTTP"><a href="#5-Android9-0开始系统默认禁止使用-Cleartext-HTTP" class="headerlink" title="5.Android9.0开始系统默认禁止使用 Cleartext HTTP"></a>5.Android9.0开始系统默认禁止使用 Cleartext HTTP</h4><p>Android9.0开始系统默认禁止使用 Cleartext HTTP（明文 HTTP） 流量，即直接通过 http:&#x2F;&#x2F; 协议的非加密通信<br>1.可以在 AndroidManifest.xml 中设置全局允许明文流量：android:usesCleartextTraffic&#x3D;”true”<br>2.创建安全配置文件： 在应用的 res&#x2F;xml 目录下创建一个文件，例如 network_security_config.xml</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;utf-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">network-security-config</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">domain-config</span> <span class="attr">cleartextTrafficPermitted</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">domain</span> <span class="attr">includeSubdomains</span>=<span class="string">&quot;true&quot;</span>&gt;</span>192.168.241.24<span class="tag">&lt;/<span class="name">domain</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">domain-config</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">network-security-config</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>修改 AndroidManifest.xml 文件： 在 <application> 标签中引用这个配置文件：android:networkSecurityConfig&#x3D;”@xml&#x2F;network_security_config”</p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/04/27/2024-04-27-Android%E8%8E%B7%E5%8F%96%E5%AE%9E%E9%99%85%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E9%AB%98%E7%89%88%E6%9C%AC%E7%89%B9%E6%80%A7/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/04/27/2024-04-27-Android%E8%8E%B7%E5%8F%96%E5%AE%9E%E9%99%85%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E9%AB%98%E7%89%88%E6%9C%AC%E7%89%B9%E6%80%A7/" class="trm-anima-link">
+                    Android获取实际文件路径高版本特性
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/04/27</li>
+                <li>20:46</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.2.0
+            </span>
+            <span class="footer-separator" data-separator=" | "></span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v2.2.2
+            </span>
+        </div>
+      
+
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=2.2.2"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+</body>
+
+</html>
